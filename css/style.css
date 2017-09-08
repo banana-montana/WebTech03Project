@@ -1,0 +1,747 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, p, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* end of Reset */
+
+
+
+/* my code starts here */
+
+/* formatting used on multiple pages */
+
+html, body {
+	width: 100%;
+}
+
+.homebutton i {
+	font-size: 3em;
+	color: black;
+	float: right;
+	padding: 0.5em;
+	position: absolute;
+	z-index: 5;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.homebutton i:hover {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    color: white;
+}
+
+header {
+	z-index: 2;
+	position: absolute;
+	top: 1.5em;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: rgba(250,250,250,0.6);
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+header h1 {
+	font-family: 'Lemon', cursive;
+	font-size: 2.5em;
+	padding-bottom: 20px;
+	align-self: center;
+}
+
+header p {
+	font-family: 'Josefin Sans', helvetica, sans-serif;
+	font-size: 1em;
+	align-self: center;
+	padding: 0 20px;
+	line-height: 1.5em;
+}
+
+
+
+/* ------ index page starts here ------ */
+
+.index-body {
+	background-color: white;
+}
+
+video {
+	display: block;
+	z-index: 1;
+	position: absolute;
+	margin: auto;
+  	top: 0; 
+  	left: 0; 
+  	bottom: 0; 
+  	right: 0;
+}
+
+/* Colour Sticker Menu Buttons */
+
+.clearfix {
+	clear: both;
+}
+
+.stickerbuttons {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	float: left;
+	z-index: 100;
+}
+
+.sticker-img {
+	position: relative;
+}
+
+.sticker {
+	width: 50px;
+	height: 50px;
+}
+
+.sticker-shadow {
+    opacity: 0.6;
+}
+
+.sticker-blue .sticker-img {
+	background-color: #00acf9;
+}
+
+	.place-blue {
+		position: fixed;
+		left: 85%;
+		top: 80%;
+	}
+
+	.place-blue-second {
+		position: fixed;
+		left: 35%;
+		top: 10%;
+	}
+
+.sticker-green .sticker-img {
+		background-color: #02a75b;
+	}
+
+	.place-green {
+		position: fixed;
+		left: 8%;
+		top: 14%;
+	}
+
+	.place-green-second {
+		position: fixed;
+		left: 80%;
+		top: 45%;
+	}
+
+.sticker-pink .sticker-img {
+	background-color: #ffc29d;
+}
+
+	.place-pink {
+		position: fixed;
+		left: 33%;
+		top: 82%;
+	}
+
+	.place-pink-second {
+		position: fixed;
+		left: 60%;
+		top: 20%;
+	}
+
+.sticker-red .sticker-img {
+	background-color: #f04023;
+}
+
+	.place-red {
+		position: fixed;
+		left: 58%;
+		top: 73%;
+	}
+
+.sticker-grey .sticker-img {
+	background-color: #b1a79b;
+}
+
+	.place-grey {
+		position: fixed;
+		left: 9%;
+		top: 74%;
+	}
+
+.sticker-yellow .sticker-img {
+	background-color: #fee704;
+}
+
+	.place-yellow {
+		position: fixed;
+		left: 18%;
+		top: 42%;
+	}
+
+	.place-yellow-second {
+		position: fixed;
+		left: 83%;
+		top: 11%;
+	}
+
+
+
+/* ------ blue (confetti) page starts here ------ */
+
+.blue-body {
+	background: #76f0f1;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.homebutton i {
+	font-size: 3em;
+	color: black;
+	float: right;
+	padding: 0.5em;
+	position: absolute;
+	z-index: 5;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.blue-container {
+	background: #76f0f1;
+	width: 100%;
+	height: 80%;
+}
+
+#bluecontent {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	padding: 80px 0 80px 0;
+	position: absolute;
+	bottom: 0%;
+	background-color: white;
+}
+
+.buttonContainer {
+	margin: 0 auto;
+	display: inline-block;
+}
+
+#bluecontent button {
+	padding: 5px;
+	margin: 0 20px;
+	font-size: 20px;
+  	font-family: 'Josefin Sans', helvetica, arial , sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	border-style: none;
+	background-color: transparent;
+	border: none;
+	background-color: white;
+	border-bottom: 3px solid white;
+}
+
+#bluecontent button:focus {
+	font-weight: bold;
+	outline: 0;
+	border-bottom: 3px solid black;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#canvas {
+	display: block;
+	position: relative;
+	z-index: 1;
+	pointer-events: none;
+}
+
+
+
+/* ------ Magical Jukebox page starts here ------ */
+
+.music-body {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.homebutton i {
+	font-size: 3em;
+	color: black;
+	padding: 0.5em;
+	position: absolute;
+	z-index: 5;
+}
+
+.musiccontent {
+	display: block;
+	z-index: 5;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.bar {
+	display: block;
+	width: 20%;
+	height: 100%;
+	align-self: center;
+}
+
+.bar i {
+	color: black;
+	font-size: 4.5em;
+	position: relative;
+	top: 50%;
+	left: 38%;
+}
+
+.bar i.fa.active{
+	font-size: 4.5em;
+	color: #fff;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+	.purple {
+		background-color: #9F6CF7;
+	}
+
+	.red {
+		background-color: #E5373F;
+	}
+
+	.blue {
+		background-color: #6DACF9;
+	}
+
+	.green {
+		background-color: #76D27B;
+	}
+
+	.orange {
+		background-color: #ED8F15;
+	}
+
+
+
+/* ---- Yellow Room page ---- */
+
+	.homebuttonyellow i {
+		top: 0%;
+		bottom: 0%;
+	}
+
+	.yellow-body {
+		width: 100%;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.yellow-container {
+		width: 100%;
+		height: 99%;
+	}
+
+	.yellow-body #canvas {
+		z-index: 2;
+	}
+
+
+
+
+
+
+/* ---- Error pages ---- */
+
+.homebtn-error i {
+	font-size: 8em;
+	color: white;
+	text-align: center;
+	z-index: 5;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.homebtn-error i:hover {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    color: black;
+}
+
+.errorbody {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+.message {
+	text-align: center;
+	font-family: 'Josefin Sans', helvetica, sans-serif; 
+	color: white;
+}
+
+.message h1 {
+	font-size: 50pt;
+	font-weight: 700;
+}
+
+.message p {
+	font-size: 25pt;
+	padding: 30px 0;
+}
+
+/* pink */
+.pinkerror-body {
+	background-color: #f9c19d;
+}
+
+.errorbody img {
+	width: 30%;
+	height: 30%;
+	margin: 0 auto;
+	display: block;
+	padding: 8%;
+}
+
+/* grey */
+.greyerror-body {
+	background-color: #b1a79b;
+}
+
+/* red */
+.rederror-body {
+	background-color: #e84329;
+}
+
+
+
+
+
+
+
+/* Tablet Devices */
+@media screen and (min-width:740px) and (max-width:1024px) {
+
+	/* ---- Index page ---- */
+
+	.index-body {
+		overflow: hidden;
+	}
+
+	video {
+	    -ms-transform: scale(1.5); 
+	    -webkit-transform: scale(1.5); 
+	    transform: scale(1.5);
+	}
+
+	/* stickers on index page */
+
+		.place-green-second {
+			visibility: hidden;
+		}
+
+		.place-yellow {
+			visibility: hidden;
+		}
+
+
+	/* ---- Blue confetti page ---- */
+
+	.homebutton i {
+		font-size: 2.5em;
+	}
+
+	header {
+		top: 0;
+		width: 100%;
+		border-radius: 0px;
+		padding: 20px;
+	}
+
+	header h1 {
+		font-size: 2em;
+		padding-bottom: 20px;
+	}
+
+	header p {
+		font-size: 1em;
+		padding: 0 10%;
+	}
+
+
+	/* ---- Magical Jukebox page ---- */
+
+	/*colour music bars*/
+	.purpleM {
+		width: 100%;
+		height: 30%;
+		align-self: center;
+	}
+
+	.blueM, .redM, .orangeM, .greenM {
+		width: 100%;
+		height: 17.5%;
+		align-self: center;
+	}
+
+	.bar i {
+		color: black;
+		font-size: 4em;
+		position: relative;
+		top: 30%;
+		left: 46%;
+	}
+
+	.purpleM i {
+		color: black;
+		font-size: 4em;
+		position: relative;
+		top: 60%;
+		left: 46%;
+	}
+
+
+	/* ---- Yellow Room ---- */
+
+	.yellow-body #canvas {
+		z-index: 2;
+		-ms-transform: scale(1); 
+	    -webkit-transform: scale(1); 
+	    transform: scale(1);
+	}
+
+
+/* ---- error pages ---- */
+
+	.message h1 {
+		font-size: 40pt;
+		font-weight: 700;
+	}
+
+	.message p {
+		font-size: 23pt;
+		padding: 30px 50px;
+		line-height: 1.5em;
+	}
+
+	.errorbody img {
+		width: 50%;
+		height: 50%;
+		padding: 35% 8% 12% 8%;
+	}
+
+
+ }
+	
+
+
+
+
+
+/* Mobile Devices */
+@media screen and (min-width:180px) and (max-width:739px) {
+
+	/* ---- Index page ---- */
+
+	.index-body {
+		overflow: hidden;
+	}
+
+	video {
+	    -ms-transform: scale(2.8); 
+	    -webkit-transform: scale(2.8); 
+	    transform: scale(2.8);
+	}
+
+	/* stickers on index page */
+
+		.place-green-second {
+			visibility: hidden;
+		}
+
+		.place-yellow {
+			visibility: hidden;
+		}
+
+
+	/* ---- Blue confetti page ---- */
+
+	.homebutton i {
+		font-size: 2em;
+		padding: 0.4em;
+	}
+
+	header {
+		top: 0;
+		width: 100%;
+		border-radius: 0px;
+		padding: 10px;
+	}
+
+	header h1 {
+		font-size: 1.7em;
+		padding-bottom: 12px;
+		padding-top: 8px;
+	}
+
+	header p {
+		font-size: 0.9em;
+		padding: 0 10%;
+		line-height: 1.4em;
+	}
+
+	#bluecontent {
+		padding: 40px 0 40px 0;
+		bottom: 0%;
+	}
+
+
+	/* ---- Magical Jukebox page ---- */
+
+	/*colour music bars*/
+	.purpleS {
+		width: 100%;
+		height: 40%;
+	}
+
+	.blueS, .redS, .orangeS, .greenS {
+		width: 100%;
+		height: 15%;
+	}
+
+	.bar i {
+		font-size: 2.5em;
+		top: 30%;
+		left: 44%;
+	}
+
+	.purpleS i {
+		font-size: 2.5em;
+		top: 75%;
+		left: 44%;
+	}
+
+
+	/* ---- Yellow Room ---- */
+
+	.yellow-body #canvas {
+		-ms-transform: scale(1); 
+	    -webkit-transform: scale(1); 
+	    transform: scale(1);
+	}
+
+
+
+/* ---- error pages ---- */
+
+	.message h1 {
+		font-size: 30pt;
+		font-weight: 700;
+	}
+
+	.message p {
+		font-size: 17pt;
+		padding: 30px;
+		line-height: 1.5em;
+	}
+
+	.errorbody img {
+		width: 70%;
+		height: 70%;
+		padding: 35% 8% 12% 8%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
